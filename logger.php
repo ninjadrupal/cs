@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     preg_match('~<CalledPartyNumber>sip:(.*?)@fc3.voipfoehn.net~', $rawPostData, $user);
     preg_match('~<CallingPartyName>(.*?)</CallingPartyName>~', $rawPostData,  $idcall);
     $myfile = fopen("log.txt", "a") or die("Unable to open file!");
-    fwrite($myfile, "\n" . "$rawPostData");
+    //fwrite($myfile, "\n" . "$rawPostData");
     fwrite($myfile, "\n" . "$user[1];$idcall[1]");
     fclose($myfile);
   }
