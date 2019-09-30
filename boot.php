@@ -16,9 +16,9 @@ if(isset( $_SESSION['user'])){
     $number = explode(";", $result);
     ?>
     <script>
-      var CallNotification = new Notification("Pick up the phone �~X~N�~O ", {
+      var CallNotification = new Notification("Pick up the phone ☎️", {
         icon: "<?php echo $image ;?>",
-        body: "'<?php echo$number['1']?> ' �~_~T� ",
+        body: "'<?php echo$number['1']?> 👋 ",
         requireInteraction: true
 
       });
